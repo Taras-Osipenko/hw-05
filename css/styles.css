@@ -488,25 +488,16 @@ margin-left: 30px;
     fill: var(--main-icon-color);
     border-radius: 50%;
 
-    transition-property: background-color;
+    transition-property: background-color,fill;
     transition-duration: var(--effect-time);
     transition-timing-function: var(--effect-function);
     transition-delay: var(--effect-time);
 
 }
-.social-icon-list .icon {
-        transition-property: fill;
-        transition-duration: var(--effect-time);
-        transition-timing-function: var(--effect-function);
-        transition-delay: var(--effect-time);
-
-        
-}
-
 
 .social-icon-list a:hover,
 .social-icon-list a:focus {
-    border-radius: 50%;
+    
     background-color: var(--accent-color);
     fill: var(--main-background-color);
 }
@@ -619,7 +610,7 @@ section.clients {
     border-radius: 4px;
     fill: var(--main-icon-color);
 
-    transition-property: fill;
+    transition-property: fill,border-color;
     transition-duration: var(--effect-time);
     transition-timing-function: var(--effect-function);
     transition-delay: var(--effect-time);
@@ -634,7 +625,8 @@ section.clients {
 .clients-list a:hover,
 .clients-list a:focus {
 fill: var(--accent-color);
-border: 1px solid var(--accent-color);
+border-color: var(--accent-color);
+
 }
 
 
@@ -822,9 +814,17 @@ color: var(--address-text-color);
     position: absolute;
     transform: translateY(100%);
 
-  
-
     transition-property: transform;
+    transition-duration: var(--effect-time);
+    transition-timing-function: var(--effect-function);
+    transition-delay: var(--effect-time);
+    
+    background-color: rgba(33, 150, 243, 0.9);
+
+}
+.portfolio-list-link {
+
+    transition-property: box-shadow;
     transition-duration: var(--effect-time);
     transition-timing-function: var(--effect-function);
     transition-delay: var(--effect-time);
@@ -912,22 +912,10 @@ margin-right: 0;
     border-radius: 4px;
 
 
-    transition-property: box-shadow;
+    transition-property: box-shadow,color,background-color;
     transition-duration: var(--effect-time);
     transition-timing-function: var(--effect-function);
     transition-delay: var(--effect-time);
-
-    transition-property: color;
-    transition-duration: var(--effect-time);
-    transition-timing-function: var(--effect-function);
-    transition-delay: var(--effect-time);
-
-    transition-property: background-color;
-    transition-duration: var(--effect-time);
-    transition-timing-function: var(--effect-function);
-    transition-delay: var(--effect-time);
-
-
 
 }
 .btn-list .btn.current,
